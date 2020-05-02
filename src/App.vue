@@ -124,6 +124,21 @@ export default {
         },
         routeTo(isHelp) {},
     },
+    created() {
+        this.$notify({
+            title: 'v2.0：突破性更新！',
+            dangerouslyUseHTMLString: true,
+            message: `<div class='notifition-div'>
+            <p class='red'>支持“修改”任意网站！</p>
+            <p>为了实现这一目标，v2.0做成了浏览器扩展（暂只支持Chrome）</p>
+            <p><strong><a href='https://chrome.google.com/webstore/detail/fakescreenshot/jiojdapfbpmhpihdejiglphhoeakjhmi' 
+            _target='blanket'>Google商店：下载（需要翻墙）</a></strong></p>
+            <p><strong><a href='https://github.com/thegreatjavascript/FakeScreenshot#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8' _target='blanket'>从Github仓库下载</a></strong></p>
+            </div>`,
+            type: 'success',
+            duration: 0,
+        });
+    },
 };
 </script>
 
@@ -301,5 +316,23 @@ h3 {
         text-decoration: none;
         color: inherit;
     }
+}
+</style>
+
+<style lang="scss">
+.notifition-div {
+    margin-top: 20px;
+    font-size: 15px;
+    .red {
+        color: var(--main-color);
+    }
+    a {
+        color: inherit;
+        // text-decoration: none;
+    }
+}
+
+.el-notification__content .notifition-div p {
+    margin: 5px 0;
 }
 </style>
