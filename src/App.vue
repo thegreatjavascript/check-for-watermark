@@ -136,7 +136,7 @@ export default {
             <p><strong><a href='https://github.com/thegreatjavascript/FakeScreenshot#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8' _target='blanket'>从Github仓库下载</a></strong></p>
             </div>`,
             type: 'success',
-            duration: 0,
+            duration: 4000,
         });
     },
 };
